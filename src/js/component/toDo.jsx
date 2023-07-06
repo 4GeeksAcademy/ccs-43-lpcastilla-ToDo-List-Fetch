@@ -23,6 +23,7 @@ export const ToDo = () => {
 							setToDo((prev) => {
 								return [...prev , data]
 							})
+							setData("");
 						}
 					}}
 				/>
@@ -44,7 +45,9 @@ export const ToDo = () => {
 						</li>
 					);
 				})}
-				<li className="list-group-item text-secondary">{toDo.length} item left</li>
+				<li className="list-group-item text-secondary">
+					{toDo.length > 0 ? `${toDo.length} item left` : "Nothing to do yet!"}
+				</li>
 			</ul>
 		</div>
     );
