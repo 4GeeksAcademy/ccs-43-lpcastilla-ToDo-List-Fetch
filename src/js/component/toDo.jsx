@@ -14,7 +14,7 @@ export const ToDo = () => {
 
 	async function getBackEnd () {
 		try {
-			const API_URL = "https://assets.breatheco.de/apis/fake";
+			const API_URL = "https://playground.4geeks.com/apis/fake";
 			const requestConfig = {
 				method: "GET",
 				headers: {
@@ -27,7 +27,7 @@ export const ToDo = () => {
 				return;
 			}
 				const body = await response.json();
-				const filteredTasks = body.filter(task => task.label !== "sample task");
+				const filteredTasks = body.filter(task => task.label !== "example task");
 				setToDo(filteredTasks);
 		} catch(error) {
 			console.log(error)
@@ -36,7 +36,7 @@ export const ToDo = () => {
 
 	async function postBackEnd () {
 		try {
-			const API_URL = "https://assets.breatheco.de/apis/fake";
+			const API_URL = "https://playground.4geeks.com/apis/fake";
 			const requestConfig = {
 				method: "POST",
 				headers: {
@@ -56,7 +56,7 @@ export const ToDo = () => {
 
 	async function deleteBackEnd (value) {
 		try {
-			const API_URL = "https://assets.breatheco.de/apis/fake";
+			const API_URL = "https://playground.4geeks.com/apis/fake";
 			const requestConfig = {
 				method: "PUT",
 				headers: {
@@ -78,7 +78,7 @@ export const ToDo = () => {
 	
 	async function putBackEnd (value) {
 		try {
-			const API_URL = "https://assets.breatheco.de/apis/fake";
+			const API_URL = "https://playground.4geeks.com/apis/fake";
 			const requestConfig = {
 				method: "PUT",
 				headers: {
@@ -100,7 +100,7 @@ export const ToDo = () => {
 	
 	async function deleteUser () {
 		try {
-			const API_URL = "https://assets.breatheco.de/apis/fake";
+			const API_URL = "https://playground.4geeks.com/apis/fake";
 			const requestConfig = {
 				method: "DELETE",
 				headers: {
