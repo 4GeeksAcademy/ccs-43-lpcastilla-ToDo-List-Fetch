@@ -9,7 +9,7 @@ export const ToDo = () => {
 	console.log(backEnd)
 	
 	useEffect(() => {
-		getBackEnd();
+		postBackEnd();
 	  }, []);
 
 	async function getBackEnd () {
